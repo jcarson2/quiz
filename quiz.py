@@ -6,12 +6,16 @@ Given two int values, return True if one is negative and one is
 positive. Except if the parameter "negative" is True, then return True
 only if both are negative.
 -----------------------------------------------------------------------
-
 """
 
-
 def pos_neg(a, b, negative):
-    pass
+
+    if negative:
+        return (a < 0 and b < 0)
+
+    else:
+        return ((a < 0 and b > 0) or (a > 0 and b < 0))
+
 
 
 # Expected outputs:
@@ -41,13 +45,16 @@ example 1996. However, years that are divisible by 100 (for example,
 1900) are not leap years, but years that are divisible by 400 are leap
 years (for example, 2000).
 -----------------------------------------------------------------------
-
 """
+input(year)
 
+leap_year(year);
 
-def leap_year(year):
-    pass
-
+if ((year 4 is 0) and (year 100 is not 0)):
+or (year 400 is 0):
+    true
+else:
+    false
 
 # When you've completed your function, uncomment the
 # following lines and run this file to test!
@@ -67,12 +74,13 @@ Question 3:
 Write a function with loops that computes the sum of all squares between
 1 and n (inclusive).
 -----------------------------------------------------------------------
-
 """
+sum = 0
+for i in range(0,(sum_all)):
+    sum = sum + i*i
 
 
-def sum_squares(n):
-    pass
+
 
 # When you've completed your function, uncomment the
 # following lines and run this file to test!
